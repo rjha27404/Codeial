@@ -13,7 +13,7 @@ app.set('view engine', 'ejs');
 // path setting
 app.set('views',path.join(__dirname,'views'));
 // url encoded
-// app.use(express.urlencoded());
+app.use(express.urlencoded());
 // use express router
 app.use('/',require('./routes'));
 app.use(cookieParser());

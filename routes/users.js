@@ -12,10 +12,8 @@ router.get('/post', usersController.post);
 // signup route
 router.get('/sign-up', usersController.signup);
 // signin route
-router.get('sign-in', usersController.signin);
+router.get('/sign-in', usersController.signin);
 // create
-router.post('/create',(req,res)=>{
-    
-})
+router.post('/create', usersController.create);
 // export router to available for use
 module.exports = router;
